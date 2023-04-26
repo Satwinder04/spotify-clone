@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100vh;
+  width: 100vw;
+}
+
+.main{
+  width: 100vw;
+  min-height: 100vh;
+  background: red;
+}
+
+.top{
+  width: 100vw;
+  min-height: 90vh;
+  background: blue;
+  display: flex;
+}
+.left{
+  width: 20vw;
+  min-height:90vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.l-top{
+  width: inherit;
+  /* min-height: 45vh; */
+  background: rgb(0, 0, 0);
+  padding: 20px 5px;
+}
+.l-top p{
+  color: rgb(186, 186, 186);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.l-top p img{
+  filter: invert(0.7);
+}
+.l-top p img:hover{
+  filter: invert(1);
+}
+.l-top p:hover{
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.l-bottom{
+  width: inherit;
+  min-height: 50vh;
+  background: orange;
+
+}
+.l-bottom-box{
+  height: 50vh;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+.right{
+  width: 80vw;
+  min-height: 90vh;
+  background: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+}
+.r-nav{
+  width: inherit;
+  min-height: 15vh;
+  background: #a78282;
+}
+.r-body{
+  width: inherit;
+  min-height: 75vh;
+  background: rgb(27, 186, 16);
+}
+.bottom{
+  min-height:10vh;
+  width: 100vw;
+  background: #000;
+}
