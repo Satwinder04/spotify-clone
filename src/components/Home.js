@@ -52,11 +52,26 @@ function Home() {
         <div className="top">
           <div className="left">
             <div className="l-top">
-              <p className="mx-1 my-2"><img className="w-8 mx-3 my-1"  src="../img/home-5-line.png"/>Home</p>
-              <p className="mx-1 my-2"><img className="w-8 mx-3 my-1"  src="../img/home-5-line.png"/>Home</p>
-              <p className="mx-1 my-2"><img className="w-8 mx-3 my-1"  src="../img/home-5-line.png"/>Home</p>
-              <p className="mx-1 my-2 mt-4"><img className="w-8 mx-3 my-1" src="../img/home-5-line.png"/>Home</p>
-              <p className="mx-1 my-2"><img className="w-8 mx-3 my-1" src="../img/home-5-line.png"/>Home</p>
+              <p className="mx-1 my-2">
+                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
+                Home
+              </p>
+              <p className="mx-1 my-2">
+                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
+                Home
+              </p>
+              <p className="mx-1 my-2">
+                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
+                Home
+              </p>
+              <p className="mx-1 my-2 mt-4">
+                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
+                Home
+              </p>
+              <p className="mx-1 my-2">
+                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
+                Home
+              </p>
             </div>
             <div className="l-bottom">
               <div className="l-bottom-box">
@@ -64,9 +79,26 @@ function Home() {
                 <p>satta</p>
                 <p>Abhishek</p>
                 <p>satta</p>
-                
-                
-                
+                <p>Abhishek</p>
+                <p>satta</p>
+                <p>Abhishek</p>
+                <p>satta</p>
+                <p>Abhishek</p>
+                <p>satta</p>
+                <p>Abhishek</p>
+                <p>satta</p>
+                <p>Abhishek</p>
+                <p>satta</p>
+                <p>Abhishek</p>
+                <p>satta</p>
+                <p>Abhishek</p>
+                <p>satta</p>
+                <p>Abhishek</p>
+                <p>satta</p>
+                <p>Abhishek</p>
+                <p>satta</p>
+                <p>Abhishek</p>
+                <p>satta</p>
               </div>
             </div>
           </div>
