@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/navbar' element={<Navbar/>}></Route>
-      <Route path='/' element={<Front/>}></Route>
-      <Route path='/home' element={<Home/>}></Route>
+      <Route path='/front' element={<Front/>}></Route>
+      <Route path='/' element={<Home/>}></Route>
     </Routes>
 
     </BrowserRouter>

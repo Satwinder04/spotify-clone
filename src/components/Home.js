@@ -51,41 +51,86 @@ function Home() {
       <div className="main">
         <div className="top">
           <div className="left">
-            <div className="l-top">
-              <p className="mx-1 my-2">
-                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
-                Home
-              </p>
-              <p className="mx-1 my-2">
-                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
-                Home
-              </p>
-              <p className="mx-1 my-2">
-                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
-                Home
-              </p>
-              <p className="mx-1 my-2 mt-4">
-                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
-                Home
-              </p>
-              <p className="mx-1 my-2">
-                <img className="w-8 mx-3 my-1" src="../img/home-5-line.png" />
-                Home
-              </p>
+            <div className="l-top-fixed">
+              <div className="l-top">
+                <div className="side-botton">
+                  <img src="../img/home-5-line.png" />
+                  <p className="mx-3">Home</p>
+                </div>
+                <div className="side-botton">
+                  <img src="../img/search.png" />
+                  <p className="mx-3">Search</p>
+                </div>
+                <div className="side-botton">
+                  <img src="../img/lib.png" />
+                  <p className="mx-3">Your Library</p>
+                </div>
+                <div className="side-botton mt-4">
+                  <img src="../img/add.png" />
+                  <p className="mx-3">Create Playlist</p>
+                </div>
+                <div className="side-botton mb-4">
+                  <img src="../img/like.png" />
+                  <p className="mx-3">Liked Songs</p>
+                </div>
+              </div>
             </div>
             <div className="l-bottom">
               <div className="l-bottom-box">
-                <p>Abhishek</p>
-                <p>satta</p>
-                <p>Abhishek</p>
-                <p>satta</p>
-                <p>Abhishek</p>
-                <p>Abhishek</p>
-                <p>satta</p>
-                <p>Abhishek</p>
-                <p>Abhishek</p>
-                <p>satta</p>
-                <p>Abhishek</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
+                <p className=" my-1 ">The Adam Project</p>
+                <p className=" my-1 ">My Playlist #12</p>
+                <p className=" my-1 ">Amrinder Gill</p>
               </div>
             </div>
           </div>
