@@ -165,12 +165,17 @@ html,body{
   overflow: auto;
 }
 .card-box{
+  position: relative;
   width: auto;
   min-height: 400px;
   margin: 50px 0;
-  background: red;
-  padding: 1px 0px;
- 
+  background: rgb(18, 18, 18);
+  padding: 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.sub-card-box{
+ width: auto;
 }
 .bottom{
   min-height:10vh;
@@ -178,13 +183,20 @@ html,body{
   background: #000;
 }
 .card1{
-  margin: 20px 0;
-  width: 350px;
+  margin: 20px 0px;
+  margin-right: 40px;
+  /* min-width: 350px; */
+  width: 22.5vw;
   background: rgb(42, 42, 42);
   border-radius:5px;
   transition: 0.3s ease-in-out;
   overflow: hidden;
   cursor: pointer;
+}
+@media screen and (min-width: 1800px){
+  .card1{
+    width:25vw ;
+  }
 }
 .card1 img{
   height:90px;
@@ -196,10 +208,17 @@ html,body{
   font-weight: 700;
   font-size: 1rem;
 }
+.card1 p::after{
+  font-weight: 700;
+  font-size: 1rem;
+}
 
 .card1:hover{
   background: rgb(65, 65, 65); 
 }
-.card1:hover img{
+.card1:hover .card-dp{
   box-shadow: 5px 0px 32px 0px rgba(0,0,0,0.4);
+}
+.paly-botton{
+  width: 20px;
 }
