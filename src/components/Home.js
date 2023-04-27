@@ -136,7 +136,66 @@ function Home() {
           </div>
           <div className="right">
             <div className="r-nav"></div>
-            <div className="r-body"></div>
+            <div className="r-body">
+              <div className="r-body-box">
+                <div className="card-box">
+                  <div className="text-start my-5 col-md-12 d-flex justify-content-evenly flex-wrap">
+                    <div className="col-md-12">
+                      <p className="h1 mx-5 text-light">Good Morning</p>
+                    </div>
+                    <div className="col-md-3 card1 d-flex align-items-center">
+                      <div className="col-md-4">
+                        <img src="../img/like.jpg" />
+                      </div>
+                      <div className="col-md-8">
+                        <p className="text-start mx-2 text-light">Like Songs</p>
+                      </div>
+                    </div>
+                    <div className="col-md-3 card1 d-flex align-items-center">
+                      <div className="col-md-4">
+                        <img src="../img/like.jpg" />
+                      </div>
+                      <div className="col-md-8 ">
+                        <p className="text-start mx-2 text-light">Like Songs</p>
+                      </div>
+                    </div>
+                    <div className="col-md-3 card1 d-flex align-items-center">
+                      <div className="col-md-4">
+                        <img src="../img/like.jpg" />
+                      </div>
+                      <div className="col-md-8 ">
+                        <p className="text-start mx-2 text-light">Like Songs</p>
+                      </div>
+                    </div>
+                    <div className="col-md-3 card1 d-flex align-items-center">
+                      <div className="col-md-4">
+                        <img src="../img/like.jpg" />
+                      </div>
+                      <div className="col-md-8">
+                        <p className="text-start mx-2 text-light">Like Songs</p>
+                      </div>
+                    </div>
+                    <div className="col-md-3 card1 d-flex align-items-center">
+                      <div className="col-md-4">
+                        <img src="../img/like.jpg" />
+                      </div>
+                      <div className="col-md-8 ">
+                        <p className="text-start mx-2 text-light">Like Songs</p>
+                      </div>
+                    </div>
+                    <div className="col-md-3 card1 d-flex align-items-center">
+                      <div className="col-md-4">
+                        <img src="../img/like.jpg" />
+                      </div>
+                      <div className="col-md-8 ">
+                        <p className="text-start mx-2 text-light">Like Songs</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="card-box"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="bottom"></div>

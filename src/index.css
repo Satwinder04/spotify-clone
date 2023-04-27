@@ -147,15 +147,59 @@ html,body{
   flex-direction: column;
 }
 .r-nav{
+  /* width:100%; */
   min-height: 15vh;
   background: #a78282;
 }
 .r-body{
+  /* width: 100%; */
   min-height: 75vh;
-  background: rgb(27, 186, 16);
+  background: rgb(27, 186, 16); 
+  display: flex;
+  justify-content: center;
+}
+.r-body-box{
+  height:75vh ;
+  width: 100%;
+  background: #000;
+  overflow: auto;
+}
+.card-box{
+  width: auto;
+  min-height: 400px;
+  margin: 50px 0;
+  background: red;
+  padding: 1px 0px;
+ 
 }
 .bottom{
   min-height:10vh;
   width: 100vw;
   background: #000;
+}
+.card1{
+  margin: 20px 0;
+  width: 350px;
+  background: rgb(42, 42, 42);
+  border-radius:5px;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card1 img{
+  height:90px;
+  width: 90px;
+  transition: 0.3s ease-in-out;
+}
+
+.card1 p{
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card1:hover{
+  background: rgb(65, 65, 65); 
+}
+.card1:hover img{
+  box-shadow: 5px 0px 32px 0px rgba(0,0,0,0.4);
 }
