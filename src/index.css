@@ -185,8 +185,8 @@ html,body{
 .card1{
   margin: 20px 0px;
   margin-right: 40px;
-  /* min-width: 350px; */
-  width: 22.5vw;
+  min-width: 340px;
+  /* width: 22.5vw; */
   background: rgb(42, 42, 42);
   border-radius:5px;
   transition: 0.3s ease-in-out;
@@ -196,6 +196,9 @@ html,body{
 @media screen and (min-width: 1800px){
   .card1{
     width:25vw ;
+  }
+  .card1 p{
+    margin: 0;
   }
 }
 .card1 img{
@@ -216,9 +219,37 @@ html,body{
 .card1:hover{
   background: rgb(65, 65, 65); 
 }
-.card1:hover .card-dp{
-  box-shadow: 5px 0px 32px 0px rgba(0,0,0,0.4);
+.card-dp{
+   box-shadow: 5px 0px 32px 0px rgba(0,0,0,0.4);
 }
-.paly-botton{
+
+.card1:hover .play-button{
+  display: block;
+}
+.play-button{
   width: 20px;
+  display: none;
+  border-radius: 50%;
+  transform: scale(0.8);
+  transition: 0.3s ease-in-out;
+
+}
+.play-button:hover{
+  filter: brightness(1.2);
+  transform:  scale(0.9);
+  /* box-shadow: 0px 37px 50px -11px rgba(0,0,0,0.5); */
+}
+.card2{
+  margin: 20px 0px;
+  margin-right: 40px;
+  /* width: 15vw; */
+  background: rgb(42, 42, 42);
+  border-radius:5px;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
 }
