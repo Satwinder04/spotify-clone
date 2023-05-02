@@ -10,6 +10,9 @@ function Sidebar(props) {
           <SidebarMenu img={"../img/home-5-line.png"} heading={"Home"} />
           <SidebarMenu img={"../img/search.png"} heading={"Search"} />
           <SidebarMenu img={"../img/lib.png"} heading={"Library"} />
+          <div className="my-2">
+
+          </div>
           <SidebarMenu img={"../img/add.png"} heading={"Create PlayList"} />
           <SidebarMenu img={"../img/like.png"} heading={"Liked Songs"} />
         </div>

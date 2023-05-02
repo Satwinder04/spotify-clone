@@ -140,24 +140,25 @@ body {
 .right {
   width: 100%;
   min-height: 90vh;
-  background: rebeccapurple;
+  /* background: rebeccapurple; */
   display: flex;
   flex-direction: column;
 }
 .r-nav {
   /* width:100%; */
-  min-height: 15vh;
-  background: #a78282;
+  min-height: 10vh;
+  background:rgb(32, 22, 64);
+  bottom: 100vh;
 }
 .r-body {
   /* width: 100%; */
-  min-height: 75vh;
+  min-height: 80vh;
   background: rgb(27, 186, 16);
   display: flex;
   justify-content: center;
 }
 .r-body-box {
-  height: 75vh;
+  height: 80vh;
   width: 100%;
   background: #000;
   overflow: auto;
@@ -239,8 +240,9 @@ body {
 .card2 {
   margin: 20px 0px;
   margin-right: 40px;
-  /* width: 15vw; */
-  background: rgb(42, 42, 42);
+  width: 15vw;
+  height: 300px;
+  background: rgb(24, 24, 24);
   border-radius: 5px;
   transition: 0.3s ease-in-out;
   overflow: hidden;
@@ -249,4 +251,24 @@ body {
   justify-content: start;
   align-items: center;
   flex-direction: column;
+}
+.card2:hover{
+  background: rgb(40, 40, 40);
+}
+.card2 img{
+  /* width: 100%; */
+  border-radius: 5px;
+  box-shadow: 0px 0px 57px -26px rgba(0,0,0,1);
+}
+.discription p{
+  font-size: 0.9rem;
+  color: #8f8f8f;
+  font-weight: 600;
+}
+.discription p:hover{
+  text-decoration: underline;
+}
+.discription h5{
+  font-size: 1.2rem;
+  color: #ffffff;
 }
