@@ -172,7 +172,9 @@ body {
   padding: 0px 0px;
   display: flex;
   justify-content: center;
+  /* justify-self: start; */
 }
+
 .sub-card-box {
   width: auto;
 }
@@ -198,6 +200,9 @@ body {
   }
   .card1 p {
     margin: 0;
+  }
+  .card2{
+    
   }
 }
 .card1 img {
@@ -232,6 +237,7 @@ body {
   transform: scale(0.8);
   transition: 0.3s ease-in-out;
 }
+
 .play-button:hover {
   filter: brightness(1.2);
   transform: scale(0.9);
@@ -239,9 +245,10 @@ body {
 }
 .card2 {
   margin: 20px 0px;
-  margin-right: 40px;
-  width: 15vw;
-  height: 300px;
+  margin: 15px;
+  /* width: 230px; */
+  width: 12vw;
+  /* height: 270px; */
   background: rgb(24, 24, 24);
   border-radius: 5px;
   transition: 0.3s ease-in-out;

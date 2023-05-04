@@ -13,12 +13,13 @@ function VerticalCard(props) {
     // </div>
     <>
       <div className="col-md-3 card2">
-        <div className="col-md-10 m-3">
+        <div className="col-md-10 m-3 ">
           <img className="" src="../img/sohne_lagde.jpeg"/>
+          
         </div>
         <div className="col-md-10 text-light discription">
           <h5 className="fw-bold">Sohne Lagde</h5>
-          <p className="my-2 ">Sidhu Moose Wala</p>
+          <p className="my-2 mb-3">Sidhu Moose Wala</p>
         </div>
       </div>
     </>

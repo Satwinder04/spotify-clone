@@ -1,7 +1,9 @@
+import CardHeading from "./CardHeading";
 import MusicCard from "./MusicCard";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import VerticalCard from "./VerticalCard";
+
 
 function Home() {
   return (
@@ -16,8 +18,26 @@ function Home() {
             <div className="r-body">
               <div className="r-body-box">
                 <MusicCard />
-                <div className="card-box">
+                <div className="card-box d-flex flex-wrap vertical-box">
                   <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  <VerticalCard />
+                  
                 </div>
               </div>
             </div>
