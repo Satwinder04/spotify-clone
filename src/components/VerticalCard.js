@@ -13,9 +13,9 @@ function VerticalCard(props) {
     // </div>
     <>
       <div className="col-md-3 card2">
-        <div className="col-md-10 m-3 ">
-          <img className="" src="../img/sohne_lagde.jpeg"/>
-          
+        <div className="col-md-10 m-3" style={{position: "relative"}}>
+          <img className="card2-img" src="../img/sohne_lagde.jpeg"/>
+          <img className="v-play-button" src="../img/play.jpg"/>
         </div>
         <div className="col-md-10 text-light discription">
           <h5 className="fw-bold">Sohne Lagde</h5>

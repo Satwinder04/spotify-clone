@@ -18,19 +18,12 @@ function Home() {
             <div className="r-body">
               <div className="r-body-box">
                 <MusicCard />
-                <div className="card-box d-flex flex-wrap vertical-box">
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
+                <div className="card-box d-flex flex-column justify-content-start vertical-box py-5 px-3" style={{overflowX: "auto"}}>
+                  <div className="d-flex px-3 justify-content-between">
+                    <p className="h3 text-light">Recently Played</p>
+                    <p className="text-secondary fw-normal">SHOW ALL</p>
+                  </div>
+                  <div className="d-flex flex-wrap" style={{overflowX: "auto"}}>
                   <VerticalCard />
                   <VerticalCard />
                   <VerticalCard />
@@ -38,6 +31,7 @@ function Home() {
                   <VerticalCard />
                   <VerticalCard />
                   
+                  </div>
                 </div>
               </div>
             </div>

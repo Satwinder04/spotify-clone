@@ -205,6 +205,7 @@ body {
     
   }
 }
+
 .card1 img {
   height: 90px;
   width: 90px;
@@ -241,13 +242,12 @@ body {
 .play-button:hover {
   filter: brightness(1.2);
   transform: scale(0.9);
-  /* box-shadow: 0px 37px 50px -11px rgba(0,0,0,0.5); */
 }
 .card2 {
-  margin: 20px 0px;
-  margin: 15px;
-  /* width: 230px; */
-  width: 12vw;
+  margin: 20px 1.3vw;
+  /* margin: 15px; */
+  width: 206px;
+  /* width: 14.4vw; */
   /* height: 270px; */
   background: rgb(24, 24, 24);
   border-radius: 5px;
@@ -262,9 +262,9 @@ body {
 .card2:hover{
   background: rgb(40, 40, 40);
 }
-.card2 img{
+.card2-img{
   /* width: 100%; */
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0px 0px 57px -26px rgba(0,0,0,1);
 }
 .discription p{
@@ -278,4 +278,25 @@ body {
 .discription h5{
   font-size: 1.2rem;
   color: #ffffff;
+}
+.v-play-button{
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  bottom: 7px;
+  right:  7px;
+  transition: height 2s;
+  transition: opacity 0.5s ease-in-out;  
+  transform:translateY(9999px);
+  opacity: 0;
+  filter: brightness(1.2);
+}
+
+.card2:hover .v-play-button{
+  transform:translateY(0);
+  opacity: 1;
+}
+.v-play-button:hover{
+  transform: scale(1.1);
+  box-shadow:  0px 10px 5px #0000005d;
 }
