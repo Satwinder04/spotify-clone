@@ -51,7 +51,7 @@ function Front() {
                           className="h-full w-full object-cover object-center"
                         />
                       </div>
-                      <div className="h-64 w-44 overflow-hidden rounded-lg">
+                      <div className7474="h-64 w-44 overflow-hidden rounded-lg">
                         <img
                           src="../img/mroon5.jpg"
                           alt=""

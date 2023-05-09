@@ -10,33 +10,51 @@ function Navbar(props) {
         </div>
         <div className="d-flex my-3 mx-0 ">
 
-        <button type="button" class="upgrade btn btn-outline-light fw-bold rounded-pill px-3">Upgrade</button>
+        <button type="button" class="upgrade btn btn-outline-light fw-bold rounded-pill px-3">
+          Upgrade</button>
 
 
 
           <div class="dropdown mx-4">
             <button
-              class="btn btn-outline-light dropdown-toggle"
+              class="btn btn-secondary  border-0 rounded-pill p-1 d-flex align-item-center justify-content-between dropbtn"
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
-            >
-              Dropdown button
+            ><img className="dp" src="../img/sattu.jpg"/>
+              <span className="mx-2">Sattu</span> 
+              <img className="d-arrow" src="../img/downward-arrow.png"/>
             </button>
             <ul class="dropdown-menu">
               <li>
                 <a class="dropdown-item" href="#">
-                  Action
+                  Account
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
-                  Another action
+                  Profile
                 </a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
-                  Something else here
+                  Upgrade to Premium
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Private Session
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Setting
+                </a>
+              </li>
+              <hr/>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Loh Out
                 </a>
               </li>
             </ul>

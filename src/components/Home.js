@@ -15,8 +15,8 @@ function Home() {
             <div className="r-nav">
               <Navbar />
             </div>
-            <div className="r-body">
-              <div className="r-body-box">
+            <div className="r-body ">
+              <div className="r-body-box pt-5">
                 <MusicCard />
                 <div className="card-box d-flex flex-column justify-content-start vertical-box py-5 px-3" style={{overflowX: "auto"}}>
                   <div className="d-flex px-3 justify-content-between">

@@ -143,22 +143,26 @@ body {
   /* background: rebeccapurple; */
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .r-nav {
-  /* width:100%; */
-  min-height: 10vh;
-  background:rgb(32, 22, 64);
-  bottom: 100vh;
+  width:100%;
+  min-height: 7vh;
+  background:rgba(32, 22, 64, 0.865);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  z-index: 3;
+
 }
 .r-body {
   /* width: 100%; */
-  min-height: 80vh;
+  min-height: 90vh;
   background: rgb(27, 186, 16);
   display: flex;
   justify-content: center;
 }
 .r-body-box {
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   background: #000;
   overflow: auto;
@@ -316,4 +320,26 @@ body {
 .upgrade{
   border: 1px solid white;
   font-size: 0.85rem;
+}
+.dp{  
+  width: 25px;
+  border-radius: 50%;
+  margin-left: 0;
+}
+.d-arrow{  
+  width: 25px;
+  border-radius: 50%;
+  transform: scale(0.7);
+  filter: invert();
+}
+.dropbtn{
+  background: #0000009a;
+}
+.dropbtn:hover{
+  background: #242424;
+}
+.dropbtn:focus .d-arrow{
+  transform:scale(0.7) rotate(180deg);
+
+
 }
