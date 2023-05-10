@@ -194,7 +194,7 @@ body {
   min-width: 340px;
   /* width: 22.5vw; */
   background: rgb(42, 42, 42);
-  border-radius: 5px;
+  border-radius: 4px;
   transition: 0.3s ease-in-out;
   overflow: hidden;
   cursor: pointer;
@@ -356,9 +356,36 @@ body {
 .controler1{
   width: 50vw;
   height: inherit;
-  background: #f00000;
+  /* background: #000000; */
 }
 .volume{
   width: 25vw;
   height: inherit;
+}
+
+.foot-discription p{
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #808080;
+}
+.footer-icon{
+  cursor: pointer;
+  margin:auto 12px;
+  height: 2vh;
+  filter: invert();
+}
+.footer-icon:hover{
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(89, 255, 106)) saturate(7);
+}
+.footer-play-button{
+  cursor: pointer;
+  height:4.5vh;
+  margin:1vh 10px;
+  border-radius: 50%;
+}
+.duration{
+  margin: auto 10px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #808080;
 }
