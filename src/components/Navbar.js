@@ -25,29 +25,29 @@ function Navbar(props) {
               <span className="mx-2">Sattu</span> 
               <img className="d-arrow" src="../img/downward-arrow.png"/>
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu dropdown-menu-dark">
               <li>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item py-2" href="#">
                   Account
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item py-2" href="#">
                   Profile
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item py-2" href="#">
                   Upgrade to Premium
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item py-2" href="#">
                   Private Session
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item py-2" href="#">
                   Setting
                 </a>
               </li>

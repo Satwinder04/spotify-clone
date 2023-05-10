@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import VerticalCard from "./VerticalCard";
 
-
 function Home() {
   return (
     <>
@@ -18,27 +17,48 @@ function Home() {
             <div className="r-body ">
               <div className="r-body-box pt-5">
                 <MusicCard />
-                <div className="card-box d-flex flex-column justify-content-start vertical-box py-5 px-3" style={{overflowX: "auto"}}>
+                <div
+                  className="card-box d-flex flex-column justify-content-start vertical-box py-5 px-3"
+                  style={{ overflowX: "auto" }}
+                >
                   <div className="d-flex px-3 justify-content-between">
                     <p className="h3 text-light">Recently Played</p>
                     <p className="text-secondary fw-normal">SHOW ALL</p>
                   </div>
-                  <div className="d-flex flex-wrap" style={{overflowX: "auto"}}>
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  <VerticalCard />
-                  
+                  <div
+                    className="d-flex flex-wrap"
+                    style={{ overflowX: "auto" }}
+                  >
+                    <VerticalCard />
+                    <VerticalCard />
+                    <VerticalCard />
+                    <VerticalCard />
+                    <VerticalCard />
+                    <VerticalCard />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="bottom">
-          <footer />
+        <div className="bottom d-flex">
+          <div className=" foot-card">
+            <div className="col-md-6 ">
+
+              <div className="col-md-5">
+                <img src="../img/her.jpeg" />
+              </div>
+              <div>
+                
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div className=" controler1"></div>
+          <div className=" volume"></div>
         </div>
       </div>
     </>
