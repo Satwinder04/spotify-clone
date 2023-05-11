@@ -80,16 +80,16 @@ function Home() {
           </div>
           <div className=" volume ">
             
-              <div className="footer-icon-2 mx-2">
+              <div className="footer-icon-2 mx-0">
                 <img src="../img/mic.png" />
               </div>
-              <div className="footer-icon-2 mx-2">
+              <div className="footer-icon-2 mx-0">
                 <img src="../img/queue.png" />
               </div>
-              <div className="footer-icon-2 mx-2">
+              <div className="footer-icon-2 mx-0">
                 <img src="../img/pc.png" />
               </div>
-              <div className="footer-icon-2 mx-2">
+              <div className="footer-icon-2 mx-0">
                 <img src="../img/sound.png" />
               </div>
               <div className="my-auto w-5 mx-0 px-2">
