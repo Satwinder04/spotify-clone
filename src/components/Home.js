@@ -25,17 +25,12 @@ function Home() {
                     <p className="h3 text-light">Recently Played</p>
                     <p className="text-secondary fw-normal">SHOW ALL</p>
                   </div>
-                  <div
+                  {/* <div
                     className="d-flex flex-wrap"
                     style={{ overflowX: "auto" }}
-                  >
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
-                    <VerticalCard />
-                  </div>
+                  > */}
+                  <VerticalCard />
+                  {/* </div> */}
                 </div>
               </div>
             </div>
@@ -69,9 +64,16 @@ function Home() {
                 aria-valuenow={25}
                 aria-valuemin={0}
                 aria-valuemax={100}
-                style={{width:"80%", height: "5px" , background:"rgb(94, 94, 94)"}}
+                style={{
+                  width: "80%",
+                  height: "5px",
+                  background: "rgb(94, 94, 94)",
+                }}
               >
-                <div className="progress-bar" style={{ width: "25%",background:"white" }} />
+                <div
+                  className="progress-bar"
+                  style={{ width: "25%", background: "white" }}
+                />
               </div>
               <p className="duration">4:00</p>
             </div>

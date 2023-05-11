@@ -1,28 +1,42 @@
-import React from "react";
+import axios from "axios";
+import React, { useContext, useEffect } from "react";
+import { StateContext } from "../context/context";
 
-function VerticalCard(props) {
+function VerticalCard() {
+  const { token, getArtistData, artistData } = useContext(StateContext);
+  const getRecentPlayed = async () => {
+    const response = await axios(`https://api.spotify.com/v1/me/top/tracks`, {
+      headers: {
+        Authorization: "Bearer " + token,
+      },
+    });
+    const { items } = response.data;
+    const artistsData = items.map(({ name, artists, album }) => {
+      return { name, artists, album };
+    });
+    getArtistData(artistsData);
+  };
+  console.log(artistData);
+  useEffect(() => {
+    getRecentPlayed();
+  }, [token]);
   return (
-    // <div className="col-md-2 card2 ">
-    //   <div className="col-md-7 ">
-    //     <img className="card-dp" src="../img/like.jpg" />
-    //   </div>
-    //   <div className="col-md-8 ">
-    //     <p className="text-start mx-2 text-light">Like Songs</p>
-    //     <img className="p-3 text-end play-button" src="../img/play.jpg" />
-    //   </div>
-    // </div>
-    <>
-      <div className="col-md-3 card2">
-        <div className="col-md-10 m-3" style={{position: "relative"}}>
-          <img className="card2-img" src="../img/sohne_lagde.jpeg"/>
-          <img className="v-play-button" src="../img/play.jpg"/>
-        </div>
-        <div className="col-md-10 text-light discription">
-          <h5 className="fw-bold">Sohne Lagde</h5>
-          <p className="my-2 mb-3">Sidhu Moose Wala</p>
-        </div>
-      </div>
-    </>
+    <div className="d-flex flex-wrap">
+      {artistData.map(({ name, album, artists }, index) => {
+        return (
+          <div className="col-md-3 card2" key={index}>
+            <div className="col-md-10 m-3" style={{ position: "relative" }}>
+              <img className="card2-img" src={album.images[0].url} />
+              <img className="v-play-button" src="../img/play.jpg" />
+            </div>
+            <div className="col-md-10 text-light px-3 discription">
+              <h5 className="fw-bold">{name.slice(0, 16)}</h5>
+              <p className="my-2 mb-3">{artists[0].name}</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
