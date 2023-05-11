@@ -78,7 +78,43 @@ function Home() {
               <p className="duration">4:00</p>
             </div>
           </div>
-          <div className=" volume"></div>
+          <div className=" volume ">
+            
+              <div className="footer-icon-2 mx-2">
+                <img src="../img/mic.png" />
+              </div>
+              <div className="footer-icon-2 mx-2">
+                <img src="../img/queue.png" />
+              </div>
+              <div className="footer-icon-2 mx-2">
+                <img src="../img/pc.png" />
+              </div>
+              <div className="footer-icon-2 mx-2">
+                <img src="../img/sound.png" />
+              </div>
+              <div className="my-auto w-5 mx-0 px-2">
+                {/* <input type="range" min={1} max={100} defaultValue={50} style={{width:"6vw", height: "5px" }}/> */}
+                <div
+                  className="progress"
+                  role="progressbar"
+                  aria-label="Example 1px high"
+                  aria-valuenow={25}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  style={{
+                    height: "4px",
+                    width: "7vw",
+                    background: "rgb(94, 94, 94)",
+                  }}
+                >
+                  <div
+                    className="progress-bar"
+                    style={{ width: "25%", background: "white" }}
+                  />
+                </div>
+              </div>
+          
+          </div>
         </div>
       </div>
     </>

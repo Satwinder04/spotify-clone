@@ -357,6 +357,10 @@ body {
 .volume {
   width: 25vw;
   height: inherit;
+  /* background: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .foot-discription p {
@@ -385,3 +389,16 @@ body {
   font-size: 0.8rem;
   color: #808080;
 }
+/* <<<<<<< HEAD
+=======
+.footer-icon-2 img{
+  cursor: pointer;
+  /* margin:auto 12px; */
+/* height: 2.1vh;
+  filter: invert(0.8);
+}
+.footer-icon-2:hover{
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(89, 255, 106)) saturate(7);
+} */
+
+/* >>>>>>> a24f425fe7fd0b77a4aa48c703a3fd2581ac4d23 */
