@@ -29,7 +29,7 @@ function VerticalCard() {
               <img className="card2-img" src={album.images[0].url} />
               <img className="v-play-button" src="../img/play.jpg" />
             </div>
-            <div className="col-md-10 text-light px-3 discription">
+            <div className="col-md-10 text-light px-0 discription">
               <h5 className="fw-bold">{name.slice(0, 16)}</h5>
               <p className="my-2 mb-3">{artists[0].name}</p>
             </div>
