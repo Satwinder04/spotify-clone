@@ -361,6 +361,10 @@ body {
 .volume{
   width: 25vw;
   height: inherit;
+  /* background: #000; */
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 
 .foot-discription p{
@@ -389,3 +393,13 @@ body {
   font-size: 0.8rem;
   color: #808080;
 }
+.footer-icon-2 img{
+  cursor: pointer;
+  /* margin:auto 12px; */
+  height: 2.1vh;
+  filter: invert(0.8);
+}
+.footer-icon-2:hover{
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(89, 255, 106)) saturate(7);
+}
+
