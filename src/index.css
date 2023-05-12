@@ -484,3 +484,18 @@ body {
   font-size: 5.5rem;
   font-weight: 700;
 }
+.card3{
+  width: 180px;
+  height:180px;
+  margin: 8px 0px;
+  margin-left: 15px;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+.card3 img{
+  position: absolute;
+  left: 100px;
+  top: 90px;
+  transform: rotate(30deg);
+}
