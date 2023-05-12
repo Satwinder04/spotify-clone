@@ -6,7 +6,7 @@ function Front() {
   // const navigate = useNavigate();
   // const { token } = useContext(StateContext);
   const handleClick = () => {
-    const clientId = "57864ea38c6742c590d19cc394d153c6";
+    const clientId = "0fb5fff12dd34795ba6acbe5e5644460";
     const redirectUrl = "http://localhost:3000/";
     const apiUrl = "https://accounts.spotify.com/authorize";
     const scope = [
