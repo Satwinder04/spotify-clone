@@ -3,10 +3,13 @@ export const reducer = (state, action) => {
     return { ...state, token: action.payload };
   }
   if (action.type === "GET_PLAYLIST") {
-    return { ...state, playlist: action.payload };
+    return { ...state, playlist: action.payload, latestData: action.payload };
   }
   if (action.type === "GET_ARTIST_DATA") {
     return { ...state, artistData: action.payload };
   }
+  // if (action.type === "GET_LATEST_DATA") {
+  //   return { ...state, latestData: action.payload };
+  // }
   return state;
 };

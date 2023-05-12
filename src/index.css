@@ -441,8 +441,6 @@ body {
   font-size: 0.8rem;
   color: #808080;
 }
-<<<<<<< HEAD
-=======
 
 .footer-icon-2 img {
   cursor: pointer;
@@ -454,4 +452,3 @@ body {
 .footer-icon-2:hover {
   filter: opacity(0.5) drop-shadow(0 0 0 rgb(89, 255, 106)) saturate(7);
 }
->>>>>>> b7d14afa9acd433db078e2168a619a9470d323fb

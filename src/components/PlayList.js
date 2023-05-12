@@ -11,10 +11,11 @@ function PlayList(props) {
       },
     });
     const { items } = response.data;
-    const myPlaylist = items.map(({ name, id }) => {
-      return { name, id };
+    const myPlaylist = items.map((data) => {
+      return data;
     });
     getMyPlaylists(myPlaylist);
+    // getLatestData(myPlaylist);
   };
   // console.log(playlist);
   useEffect(() => {

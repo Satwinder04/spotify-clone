@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { StateContext } from "../context/context";
 
 function Front() {
-  // const navigate = useNavigate();
-  // const { token } = useContext(StateContext);
   const handleClick = () => {
     const clientId = "57864ea38c6742c590d19cc394d153c6";
     const redirectUrl = "http://localhost:3000/";
