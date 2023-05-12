@@ -30,6 +30,32 @@ function Home() {
 
                   <VerticalCard />
                 </div>
+                <div className="card-box ">
+                  <div className="col-md-12 m-auto d-flex">
+                    <div className="col-md-2 mx-4">
+                      <img className=" banner-img" src="../img/like.jpg" />
+                    </div>
+                    <div
+                      className="col-md-10 text-light d-flex flex-column justify-content-between py-3"
+                      style={{ height: "30vh" }}
+                    >
+                      <p className="banner-head mt-4">Play List</p>
+                      <p className="banner-title h1">Liked Songs</p>
+                      <p className="banner-details d-flex align-item-center">
+                        <button
+                          class="btn btn-secondary  border-0 rounded-pill p-1 d-flex align-item-center justify-content-between "
+                          type="button"
+                          
+                        >
+                          <img className="dp" src="../img/sattu.jpg" />
+                          <span className="mx-3">Sattu</span>
+                         
+                        </button>
+                        <span className="my-auto mx-1">341 Songs</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 <MusicLists />
               </div>
             </div>

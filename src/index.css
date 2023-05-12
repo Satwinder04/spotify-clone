@@ -475,3 +475,12 @@ body {
   width: 15px;
   filter: invert(0.6);
 }
+.banner-img{
+  height: 30vh;
+  box-shadow: 0px 0px 31px 10px rgba(0,0,0,0.5);
+}
+
+.banner-title{
+  font-size: 5.5rem;
+  font-weight: 700;
+}
