@@ -8,6 +8,7 @@ export const StateProvider = ({ children }) => {
     token: null,
     playlist: [],
     artistData: [],
+    latestData: [],
   };
   const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -23,9 +24,19 @@ export const StateProvider = ({ children }) => {
     dispatch({ type: "GET_ARTIST_DATA", payload: artistsData });
   };
 
+  // const getLatestData = () => {
+  //   dispatch({ type: "GET_LATEST_DATA", payload: myPlaylist });
+  // };
+
   return (
     <StateContext.Provider
-      value={{ ...state, getToken, getMyPlaylists, getArtistData }}
+      value={{
+        ...state,
+        getToken,
+        getMyPlaylists,
+        getArtistData,
+        // getLatestData,
+      }}
     >
       {children}
     </StateContext.Provider>

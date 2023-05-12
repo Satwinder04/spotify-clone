@@ -451,6 +451,7 @@ body {
 .footer-icon-2:hover {
   filter: opacity(0.5) drop-shadow(0 0 0 rgb(89, 255, 106)) saturate(7);
 }
+<<<<<<< HEAD
 
 .table-1{
   width: 80vw;
@@ -475,3 +476,5 @@ body {
   width: 15px;
   filter: invert(0.6);
 }
+=======
+>>>>>>> ab00c2988855e351621e442280354c9879c0b9e5

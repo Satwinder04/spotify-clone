@@ -1,4 +1,5 @@
 import CardHeading from "./CardHeading";
+import Footer from "./Footer";
 import MusicCard from "./MusicCard";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
@@ -25,6 +26,7 @@ function Home() {
                     <p className="h3 text-light">Recently Played</p>
                     <p className="text-secondary fw-normal">SHOW ALL</p>
                   </div>
+<<<<<<< HEAD
                   {/* <div
                     className="d-flex flex-wrap"
                     style={{ overflowX: "auto" }}
@@ -207,10 +209,16 @@ function Home() {
                   className="progress-bar"
                   style={{ width: "25%", background: "white" }}
                 />
+=======
+
+                  <VerticalCard />
+                </div>
+>>>>>>> ab00c2988855e351621e442280354c9879c0b9e5
               </div>
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

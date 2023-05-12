@@ -11,31 +11,41 @@ function VerticalCard() {
       },
     });
     const { items } = response.data;
-    const artistsData = items.map(({ name, artists, album }) => {
-      return { name, artists, album };
+    const artistsData = items.map((artistData) => {
+      return artistData;
     });
     getArtistData(artistsData);
   };
-  console.log(artistData);
+  // console.log(artistData);
   useEffect(() => {
     getRecentPlayed();
   }, [token]);
+
+  const handleClick = (artistData) => {
+    // console.log(artistData);
+  };
   return (
     <div className="d-flex flex-wrap">
-      {artistData.map(({ name, album, artists }, index) => {
-        return (
-          <div className="col-md-3 card2" key={index}>
-            <div className="col-md-10 m-3" style={{ position: "relative" }}>
-              <img className="card2-img" src={album.images[0].url} />
-              <img className="v-play-button" src="../img/play.jpg" />
+      {artistData &&
+        artistData.slice(0, 5).map((artistData, index) => {
+          const { name, album, artists } = artistData;
+          return (
+            <div className="col-md-3 card2" key={index}>
+              <div className="col-md-10 m-3" style={{ position: "relative" }}>
+                <img className="card2-img" src={album.images[0].url} />
+                <img
+                  className="v-play-button"
+                  src="../img/play.jpg"
+                  onClick={() => handleClick(artistData)}
+                />
+              </div>
+              <div className="col-md-10 text-light px-0 discription">
+                <h5 className="fw-bold">{name.slice(0, 20)}</h5>
+                <p className="my-2 mb-3">{artists[0].name}</p>
+              </div>
             </div>
-            <div className="col-md-10 text-light px-0 discription">
-              <h5 className="fw-bold">{name.slice(0, 16)}</h5>
-              <p className="my-2 mb-3">{artists[0].name}</p>
-            </div>
-          </div>
-        );
-      })}
+          );
+        })}
     </div>
   );
 }
