@@ -484,3 +484,124 @@ body {
   font-size: 5.5rem;
   font-weight: 700;
 }
+.card3{
+  width: 180px;
+  height:180px;
+  margin: 8px 0px;
+  margin-left: 15px;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+.card3 img{
+  position: absolute;
+  left: 100px;
+  top: 90px;
+  transform: rotate(30deg);
+}
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+  transition: 100ms;
+}
+
+.checkmark {
+  top: 0;
+  left: 0;
+  height:1em;
+  width: 1em;
+  transition: 100ms;
+  animation: dislike_effect 400ms ease;
+}
+
+.container input:checked ~ .checkmark path {
+  fill: rgb(28, 201, 90);
+  stroke-width: 0;
+}
+
+.container input:checked ~ .checkmark {
+  animation: like_effect 400ms ease;
+}
+
+.container:hover {
+  transform: scale(1);
+}
+
+@keyframes like_effect {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes dislike_effect {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.container-input {
+  position: relative;
+}
+
+.input {
+  height: 35px;
+  width: 250px;
+  /* padding: 10px 0px 10px 40px; */
+  padding: 0 40px;
+  padding-right: 0;
+  padding-bottom: 5px;
+
+  
+  border-radius: 9999px;
+  border: solid 1px #333;
+  transition: all .2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+.input::placeholder{
+  font-size: 0.8rem;
+  padding: auto;
+  color: #000;
+}
+.container-input svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%) scale(0.8);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 250px;
+}
