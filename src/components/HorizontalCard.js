@@ -15,7 +15,7 @@ function HorizontalCard(props) {
               key={latestData.id}
             >
               <div className="col-md-3 ">
-                <img className="card-dp" src={latestData.images[0].url} />
+                {/* <img className="card-dp" src={latestData.images[0].url} /> */}
               </div>
               <div className="col-md-9 d-flex align-items-center justify-content-between">
                 <p className="text-start mx-3 text-light">{latestData.name}</p>
