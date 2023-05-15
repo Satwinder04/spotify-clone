@@ -8,6 +8,9 @@ export const reducer = (state, action) => {
   if (action.type === "GET_ARTIST_DATA") {
     return { ...state, artistData: action.payload };
   }
+  if (action.type === "GET_SEARCH_CATEGORY") {
+    return { ...state, searchCategory: action.payload };
+  }
   // if (action.type === "GET_LATEST_DATA") {
   //   return { ...state, latestData: action.payload };
   // }

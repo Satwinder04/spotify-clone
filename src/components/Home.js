@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import MusicLists from "../pages/MusicLists";
 import SearchPage from "../pages/SearchPage";
 import SearchResult from "../pages/SearchResult";
@@ -7,8 +8,10 @@ import MusicCard from "./MusicCard";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import VerticalCard from "./VerticalCard";
+import { StateContext } from "../context/context";
 
 function Home() {
+  const { showSearch, showHome } = useContext(StateContext);
   return (
     <>
       <div className="main">
@@ -18,26 +21,26 @@ function Home() {
             <div className="r-nav">
               <Navbar />
             </div>
-            <div className="r-body ">
-              <div className="r-body-box pt-5">
-                <MusicCard />
-                <div
-                  className="card-box d-flex flex-column justify-content-start vertical-box py-5 px-3"
-                  style={{ overflowX: "auto" }}
-                >
-                  <div className="d-flex px-3 justify-content-between">
-                    <p className="h3 text-light">Recently Played</p>
-                    <p className="text-secondary fw-normal">SHOW ALL</p>
+
+            {showSearch ? (
+              <SearchPage />
+            ) : (
+              <div className="r-body ">
+                <div className="r-body-box pt-5">
+                  <MusicCard />
+                  <div
+                    className="card-box d-flex flex-column justify-content-start vertical-box py-5 px-3"
+                    style={{ overflowX: "auto" }}
+                  >
+                    <VerticalCard />
                   </div>
 
-                  <VerticalCard />
-                </div>
+                  {/* <MusicLists /> */}
 
-                {/* <MusicLists /> */}
-                {/* <SearchPage /> */}
-                <SearchResult />
+                  {/* <SearchResult /> */}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
 

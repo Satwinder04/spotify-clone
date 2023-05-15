@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useState } from "react";
 import { reducer } from "../context/reducer";
 import { type } from "@testing-library/user-event/dist/type";
 import { reducerCases } from "./constants";
@@ -9,7 +9,11 @@ export const StateProvider = ({ children }) => {
     playlist: [],
     artistData: [],
     latestData: [],
+    searchCategory: [],
   };
+
+  const [showSearch, setShowSearch] = useState(false);
+
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const getToken = (token) => {
@@ -24,6 +28,17 @@ export const StateProvider = ({ children }) => {
     dispatch({ type: "GET_ARTIST_DATA", payload: artistsData });
   };
 
+  const getSearchCategorys = (searchCategory) => {
+    dispatch({ type: "GET_SEARCH_CATEGORY", payload: searchCategory });
+  };
+
+  const searchHandleClick = () => {
+    setShowSearch(true);
+  };
+
+  const homeHandleClick = () => {
+    setShowSearch(false);
+  };
   // const getLatestData = () => {
   //   dispatch({ type: "GET_LATEST_DATA", payload: myPlaylist });
   // };
@@ -35,6 +50,10 @@ export const StateProvider = ({ children }) => {
         getToken,
         getMyPlaylists,
         getArtistData,
+        searchHandleClick,
+        homeHandleClick,
+        showSearch,
+        getSearchCategorys,
         // getLatestData,
       }}
     >
