@@ -19,7 +19,7 @@ function SearchPage(props) {
   useEffect(() => {
     getSearchCategory();
   }, [token]);
-  console.log(searchCategory);
+  // console.log(searchCategory);
   return (
     <div className="r-body-box pt-5">
       <div className="card-box my-0">

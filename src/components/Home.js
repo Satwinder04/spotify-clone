@@ -9,8 +9,10 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import VerticalCard from "./VerticalCard";
 import { StateContext } from "../context/context";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   const { showSearch, showHome } = useContext(StateContext);
   return (
     <>
